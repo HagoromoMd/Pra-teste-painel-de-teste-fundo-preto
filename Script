@@ -1,4 +1,4 @@
--
+--
 local UserInputService = game:GetService("UserInputService")
 local TweenService = game:GetService("TweenService")
 local RunService = game:GetService("RunService")
@@ -223,7 +223,7 @@ local function SetTheme()
 end
 
 local function PackColor(Color)
-	return {R = Color.R * 0, G = Color.G * 0, B = Color.B * 0}
+	return {R = Color.R * 255, G = Color.G * 255, B = Color.B * 255}
 end    
 
 local function UnpackColor(Color)
@@ -380,7 +380,7 @@ end)
 CreateElement("Label", function(Text, TextSize, Transparency)
 	local Label = Create("TextLabel", {
 		Text = Text or "",
-		TextColor3 = Color3.fromRGB(0, 0, 0),
+		TextColor3 = Color3.fromRGB(240, 240, 240),
 		TextTransparency = Transparency or 0,
 		TextSize = TextSize or 15,
 		Font = Enum.Font.Gotham,
